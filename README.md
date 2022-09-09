@@ -1,5 +1,5 @@
 # Tube3D
-Tube 3D drawing with [Babylon.js](https://www.babylonjs.com/) (LRA)
+Drawing 3D tubes with [Babylon.js](https://www.babylonjs.com/) using the LRA system and a bit of linear algebra.
 
 **Language: Javascript**
 
@@ -38,3 +38,18 @@ LRA += ' 150         0          0           0     ';
 The final 3D tube:
 
 ![Example](/images/example.jpg)
+
+## Linear Algebra
+
+A few linear algebra concepts that I needed in this project:
+
+- given two points _A_ and _B_, the vector going from _A_ to _B_ can be expressed as: _B_ - _A_
+- the vector orthogonal to two vectors can be found by applying the cross product
+- the points of a circle with center _C_ and radius _r_ lying on a 3D plane defined by two orthogonal unit vectors (_V_ and _W_) can be expressed by the following expressions:
+
+$$ P_x = C_x + r \cdot cos(\alpha) \cdot V_x + r \cdot cos(\alpha) \cdot W_x $$
+
+$$ P_y = C_y + r \cdot cos(\alpha) \cdot V_y + r \cdot cos(\alpha) \cdot W_y $$
+
+$$ P_x = C_z + r \cdot cos(\alpha) \cdot V_z + r \cdot cos(\alpha) \cdot W_z $$
+
