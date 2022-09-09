@@ -16,6 +16,16 @@ LRA stands for Length, Rotation and Angle.
 
 ## Example
 
+LRA:
+
+  L  |  R  |  A  | Radius
+-----|-----|-----|--------
+ 100 |  0  |  90 |  30
+ 50  | 90  | 180 |  50
+ 150 |     |     |
+
+Javascript code:
+
 ```javascript
 let LRA = '';
 
@@ -25,11 +35,6 @@ LRA += '  50         90        180          50    ' + "\n";
 LRA += ' 150         0          0           0     ';
 ```
 
-  L  |  R  |  A  | Radius
------|-----|-----|--------
- 100 |  0  |  90 |  30
- 50  | 90  | 180 |  50
- 150 |     |     |
-
+The final 3D tube:
 
 ![Example](/images/example.jpg)
