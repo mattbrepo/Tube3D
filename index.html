@@ -71,6 +71,7 @@ function degrees_to_radians(degrees) {
 function makeBendPath(bendAngle, bendRadius, v1, v2, pC) {
     const path = [];
 
+    // https://math.stackexchange.com/questions/73237/parametric-equation-of-a-circle-in-3d-space
     for (let i = 0; i <= bendAngle; i++) {
         const step = degrees_to_radians(i);
         const x = pC.x + bendRadius * Math.cos(step) * v2.x + bendRadius * Math.sin(step) * v1.x;
